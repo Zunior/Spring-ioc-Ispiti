@@ -16,7 +16,7 @@ import report.IspitnaPrijavaReport;
 
 
 //broj studenata koji su polozili neki predmet
-@Component(value = "report3")
+@Repository(value = "report3")
 public class IspitnaPrijavaReport3 implements IspitnaPrijavaReport{
 	@Autowired
 	private IspitnaPrijavaDao ispitnaPrijavaDao;
