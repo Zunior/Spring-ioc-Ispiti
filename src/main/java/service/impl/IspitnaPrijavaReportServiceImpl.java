@@ -12,10 +12,10 @@ import report.impl.IspitnaPrijavaReport1;
 import report.impl.IspitnaPrijavaReport2;
 import report.impl.IspitnaPrijavaReport3;
 import report.impl.IspitnaPrijavaReport4;
-import service.IspitnaPrijavaService;
+import service.IspitnaPrijavaReportService;
 
-@Service(value = "ispitnaPrijavaService")
-public class IspitnaPrijavaServiceImpl implements IspitnaPrijavaService {
+@Service(value = "ispitnaPrijavaReportService")
+public class IspitnaPrijavaReportServiceImpl implements IspitnaPrijavaReportService {
 	private IspitnaPrijavaReport1 ispitnaPrijavaReport1;
 	private IspitnaPrijavaReport2 ispitnaPrijavaReport2;
 	private IspitnaPrijavaReport3 ispitnaPrijavaReport3;

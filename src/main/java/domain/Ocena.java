@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 public class Ocena {
 	private Vrednost ocena;
 	
-	enum Vrednost {
+	public enum Vrednost {
 		sest(6), sedam(7), osam(8), devet(9), deset(10);
 		
 		private final int value;
@@ -24,8 +24,9 @@ public class Ocena {
 		return ocena;
 	}
 
-	public void setOcena(Vrednost ocena) {
+	public Ocena setOcena(Vrednost ocena) {
 		this.ocena = ocena;
+		return this;
 	}
 	
 	

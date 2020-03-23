@@ -12,8 +12,9 @@ public class Predmet {
 	public String getSifraPredmeta() {
 		return sifraPredmeta;
 	}
-	public void setSifraPredmeta(String sifraPredmeta) {
+	public Predmet setSifraPredmeta(String sifraPredmeta) {
 		this.sifraPredmeta = sifraPredmeta;
+		return this;
 	}
 	public String getNazivPredmeta() {
 		return nazivPredmeta;

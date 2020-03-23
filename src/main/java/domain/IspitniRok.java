@@ -15,8 +15,9 @@ public class IspitniRok {
 		return sifraIspitnogRoka;
 	}
 
-	public void setSifraIspitnogRoka(String sifraIspitnogRoka) {
+	public IspitniRok setSifraIspitnogRoka(String sifraIspitnogRoka) {
 		this.sifraIspitnogRoka = sifraIspitnogRoka;
+		return this;
 	}
 
 	public String getNazivIspitnogRoka() {

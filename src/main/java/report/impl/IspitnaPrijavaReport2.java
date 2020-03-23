@@ -18,14 +18,14 @@ import report.IspitnaPrijavaReport;
 
 
 //broj studenata koji su polozili neki predmet
-@Repository(value = "report2")
+@Repository(value = "ispitnaPrijavaReport2")
 public class IspitnaPrijavaReport2 implements IspitnaPrijavaReport{
 	@Autowired
 	private IspitnaPrijavaDao ispitnaPrijavaDao;
 	
-	public IspitnaPrijavaReport2() {
-		this.ispitnaPrijavaDao = new IspitnaPrijavaDaoImpl();
-	}
+//	public IspitnaPrijavaReport2() {
+//		this.ispitnaPrijavaDao = new IspitnaPrijavaDaoImpl();
+//	}
 
 	public void printReport(BeanFactory container, List<String> argumenti) {
 		IspitnaPrijavaDao ispitnaPrijavaDao = container.getBean("ispitnaPrijavaDao", IspitnaPrijavaDao.class);
@@ -36,7 +36,7 @@ public class IspitnaPrijavaReport2 implements IspitnaPrijavaReport{
 					&& ispitnaPrijava.getIspitniRok().getSifraIspitnogRoka().equalsIgnoreCase(argumenti.get(2)))
 				count++;
 		}
-		System.out.println("Predmet: " + argumenti.get(0) + " je polozilo " + count + " studenata u zadatom roku");
+		System.out.println("Predmet: " + argumenti.get(1) + " je polozilo " + count + " studenata u roku " + argumenti.get(2));
 	}
 	
 	

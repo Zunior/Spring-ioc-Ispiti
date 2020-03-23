@@ -15,8 +15,9 @@ public class Nastavnik {
 		return sifraNastavnika;
 	}
 
-	public void setSifraNastavnika(String sifraNastavnika) {
+	public Nastavnik setSifraNastavnika(String sifraNastavnika) {
 		this.sifraNastavnika = sifraNastavnika;
+		return this;
 	}
 
 	public String getImeNastavnika() {

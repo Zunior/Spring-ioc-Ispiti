@@ -18,14 +18,14 @@ import report.IspitnaPrijavaReport;
 
 //broj studenata koji su polozili neki predmet
 
-@Repository(value = "report1")
+@Repository(value = "ispitnaPrijavaReport1")
 public class IspitnaPrijavaReport1 implements IspitnaPrijavaReport{
 	@Autowired
 	private IspitnaPrijavaDao ispitnaPrijavaDao;
 	
-	public IspitnaPrijavaReport1() {
-		this.ispitnaPrijavaDao = new IspitnaPrijavaDaoImpl();
-	}
+//	public IspitnaPrijavaReport1() {
+//		this.ispitnaPrijavaDao = new IspitnaPrijavaDaoImpl();
+//	}
 	
 	
 	//posto se ne loguje ocena 5, jednostavno se broji broj prijava po predmetu
@@ -37,7 +37,7 @@ public class IspitnaPrijavaReport1 implements IspitnaPrijavaReport{
 			if(ispitnaPrijava.getPredmet().getSifraPredmeta().equalsIgnoreCase(argumenti.get(1)))
 				count++;
 		}
-		System.out.println("Predmet: " + argumenti.get(0) + " je polozilo " + count + " studenata");
+		System.out.println("Predmet: " + argumenti.get(1) + " je polozilo " + count + " studenata");
 	}
 
 	

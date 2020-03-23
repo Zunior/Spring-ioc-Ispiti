@@ -25,4 +25,5 @@ private List<IspitnaPrijava> ispitnePrijave;
 	}
 	
 	
+	
 }

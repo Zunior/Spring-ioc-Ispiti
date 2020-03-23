@@ -16,14 +16,14 @@ import report.IspitnaPrijavaReport;
 
 
 //broj studenata koji su polozili neki predmet
-@Repository(value = "report3")
+@Repository(value = "ispitnaPrijavaReport3")
 public class IspitnaPrijavaReport3 implements IspitnaPrijavaReport{
 	@Autowired
 	private IspitnaPrijavaDao ispitnaPrijavaDao;
 	
-	public IspitnaPrijavaReport3() {
-		this.ispitnaPrijavaDao = new IspitnaPrijavaDaoImpl();
-	}
+//	public IspitnaPrijavaReport3() {
+//		this.ispitnaPrijavaDao = new IspitnaPrijavaDaoImpl();
+//	}
 
 	public void printReport(BeanFactory container, List<String> argumenti) {
 		

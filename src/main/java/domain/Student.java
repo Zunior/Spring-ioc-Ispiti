@@ -15,8 +15,9 @@ public class Student {
 		return brojIndeksa;
 	}
 
-	public void setBrojIndeksa(String brojIndeksa) {
+	public Student setBrojIndeksa(String brojIndeksa) {
 		this.brojIndeksa = brojIndeksa;
+		return this;
 	}
 
 	public String getImeStudenta() {
